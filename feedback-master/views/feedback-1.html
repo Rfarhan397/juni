@@ -1,0 +1,160 @@
+    <div id="Carousel" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="Carousel" data-slide-to="0" class="active"></li>
+            <li data-target="Carousel" data-slide-to="1"></li>
+            <li data-target="Carousel" data-slide-to="2"></li>
+            <li data-target="Carousel" data-slide-to="3"></li>
+            <li data-target="Carousel" data-slide-to="4"></li>
+        </ol>
+
+<div id="feedback-box" class="container-fluid feedback-bg" style="padding: 50px 30px 50px 30px" >
+    <div class="icon"><p> -your- <br> -icon- </p></div>
+
+
+        <div class="carousel-inner" >
+            <div class="item active">
+                <h3 class="text-center" >How was your dining experience today?</h3>
+                <div class="box">
+                    <p>Please rate your dining experience as per following</p>
+                    <br>
+                    <div class="row" >
+                        <div class="col-xs-5  text-center">
+                        <p style="margin:0">Taste of food & drinks:</p> 
+                        </div>
+                        <div class="col-xs-7">
+                              <jk-rating-stars rating="feedback.taste" ></jk-rating-stars>              
+                        </div>
+                    </div> 
+                    <br>
+                    <div class="row">
+                        <div class="col-xs-5  text-center">
+                        <p style="margin: 0">Quality of food & drinks:</p> 
+                        </div>
+                        <div class="col-xs-7">
+                              <jk-rating-stars rating="feedback.quality" ></jk-rating-stars>
+                        </div>
+                    </div>
+                    <br>    
+                    <div class="row">
+                        <div class="col-xs-5  text-center">
+                        <p style="margin: 0">Choice & availabilty of menu item:</p> 
+                        </div>
+                        <div class="col-xs-7">
+                              <jk-rating-stars rating="feedback.menu"></jk-rating-stars>
+                        </div>
+                    </div> 
+                    <br>                    
+                    <div class="row">
+                        <div class="col-xs-5  text-center">
+                        <p style="margin: 0">Value for money:</p> 
+                        </div>
+                        <div class="col-xs-7">
+                              <jk-rating-stars rating="feedback.money"></jk-rating-stars>
+                        </div>
+                    </div>  
+                </div>    
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="row" style="padding-top: 50px;">
+                        <div class="col-xs-12  text-center">
+                        <h3 style="margin:0">How would you rate your waiter/service?</h3> 
+                        <br>
+                        <br>
+                        <jk-rating-stars rating="feedback.waiter" ></jk-rating-stars>              
+                        </div>
+                    </div>
+                </div>     
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="row" style="padding-top: 50px;">
+                        <div class="col-xs-12  text-center">
+                        <h3 style="margin:0">How was the ambience?</h3> 
+                        <br>
+                        <br>
+                        <jk-rating-stars rating="feedback.ambience" ></jk-rating-stars>              
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="row" style="padding-top: 50px;">
+                        <div class="col-xs-12  text-center">
+                        <h3 style="margin:0">How likely would you recommend us to your friends and family ?</h3> 
+                        <br>
+                        <br>
+                        <p class="text-left">least likely</p>
+                        
+                        <span ng-repeat="rating in feedback.ratings">
+                        <button class="w3-button w3-large w3-circle w3-red" ng-click="feedback.recommend=rating" >{{rating}}</button>
+                        </span>
+                        <br> 
+                        <p class="text-right">most likely </p>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 50px;">
+                        <div class="col-xs-12  text-center" style="padding-bottom: 20px;">
+                            <h3 style="margin:0">How did you hear about us ?</h3> 
+                            <br>
+                            <br>
+                            <div class="col-lg-3 col-sm-6">
+                                <button class="btn btn-block btn-danger">I'm a regular</button>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <button class="btn btn-block btn-danger">Advertisement</button>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <button class="btn btn-block btn-danger">Internet</button>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <button class="btn btn-block btn-danger">Friend</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+            <div class="item">
+                <div class="box">
+                    <div class="row" style="padding-top: 50px;">
+                        <div class="col-xs-12  text-center">
+                            <h3 style="margin:0">Please help us know you better.</h3> 
+                            <br>
+                            <br>
+                            <form>
+                              <div class="form-group col-sm-6">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter email" ng-model="feedback.user.name">
+                              </div>
+                              <div class="form-group col-sm-6">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="email" ng-model="feedback.user.email">
+                              </div>
+                              <div class="form-group col-sm-6">
+                                <label for="number">Contact number</label>
+                                <input type="text" class="form-control" id="number" ng-model="feedback.user.contact" placeholder="contact number">
+                              </div>
+                              <div class="form-group col-sm-6">
+                                <label for="bday">Birthday</label>
+                                <input type="date" class="form-control" id="bday" placeholder="birthday" ng-model="feedback.user.bday">
+                              </div>                                                            
+                            </form> 
+                            <br>
+                            <br>        
+                            <br>
+                            <a href="#/done" class="btn btn-lg btn-danger">Done!</a>     
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <span class="left carousel-control" data-target="#Carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </span>
+        <span class="right carousel-control" data-target="#Carousel" data-slide="next">
+           <span class="glyphicon glyphicon-chevron-right"></span>
+        </span>
+    </div>
+</div>
+

@@ -1,0 +1,313 @@
+html,body {
+    width:100%;
+    min-height: 100vh;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+    background-color: #F8EEE7;  
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size:14px;
+    line-height:24px;
+    color:#6f6f6f;
+    background-image: url('bg-6.jpg') !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover!important;
+}
+
+p{
+  font-size: 18px;
+}
+.icon{
+  position: absolute;
+  top: 50px;
+  left: calc(50% - 30px);
+  transition: 0.2s;
+  border-radius: 50%;
+  display: inline-block;
+  border: 6px solid #fff;
+  display: inline-block;
+  background:  transparent;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.icon p{
+  font-family: 'Lobster', cursive;
+  font-size: 25px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.header{
+    position:fixed;  
+    height:15vh;
+    width:100%;
+    text-align: center;
+    background-color: #49274A;
+    color: white;
+    padding: 2vh 0 2vh 0;
+    top:0px;
+    border-bottom :7px solid white;
+    z-index: 2;
+}
+
+.carousel-inner p{
+  font-family: 'Satisfy', cursive;
+  font-size: 22px;
+}
+.item h3{
+  font-family: 'Satisfy', cursive;
+}
+
+.btn-glyphicon { 
+    padding:8px ; 
+     margin-right: 3px;
+    background:#ffffff; 
+}
+
+.icon-btn 
+{ 
+    padding: 10px 10px 10px 10px;
+    border-radius: 50px; 
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.btn-custom{
+  background-color: #37451e ;
+  color: white;
+}
+
+.btn-custom : hover{
+  color: white;
+}
+
+h2 span { 
+   color: white; 
+   font:  24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 5px; 
+}
+
+
+li{
+    color: #6f6f6f;
+}
+
+a:active,
+ :focus,
+ :hover{
+    outline:none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+a:hover{
+    text-decoration:underline;
+}
+
+.feedback-bg{
+ /* margin-top: 10vh;*/
+  width:  50%;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+  background: linear-gradient(to bottom, rgba(1,1,1,0.6) 0%,rgba(1,1,1,0.6) 100%) !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover!important;
+  z-index:-1;
+  border:1px solid gray;
+  border-radius: 15px;
+  color: white;
+  min-height: 100vh ;
+}
+
+
+#feedback-box {
+  background: #fff;
+  background-size: cover;
+  padding: 80px 0 60px 0;
+  z-index: -1;
+}
+
+#feedback-box .box {
+  padding: 30px 20px;
+  margin-bottom: 50px;
+  text-align: center;
+/*  border: 1px solid #e6e6e6;
+  border-radius: 15px;*/
+  position: relative;
+  background:transparent;
+}
+
+#feedback-box .icon {
+  position: relative;
+  top: -30px;
+  left: calc(50% - 30px);
+  transition: 0.2s;
+  border-radius: 50%;
+  display: inline-block;
+  border: 6px solid #fff;
+  font-family: 'Sacramento', cursive;
+  font-size: 20px;
+}
+
+#feedback-box .icon {
+  display: inline-block;
+  background:  transparent;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+#feedback-box .icon p{
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#feedback-box .box:hover .icon i {
+  color: #dc4c4c;
+  
+}
+
+#feedback-box .box:hover .icon a {
+  color: #dc4c4c;
+  background: #fff;
+}
+
+#feedback-box .title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+#feedback-box .title a {
+  color: #111;
+}
+
+#feedback-box .description {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.btn{
+  margin-bottom: 10px!important;
+}
+
+footer{
+  background-color: #37451e ;
+  padding-top: 30px;
+  height: 100px;
+  color: white;
+
+}
+
+@media (max-width:480px){
+
+  .feedback-bg{
+
+  width:  100%;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+  background: linear-gradient(to bottom, rgba(1,1,1,0.6) 0%,rgba(1,1,1,0.6) 100%) !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover!important;
+  z-index:-1;
+  border:1px solid gray;
+  border-radius: 15px;
+  color: white;
+  min-height: 100vh ;
+}
+
+
+
+
+}
+
+@media (min-width:481px) and (max-width: 768px) {
+
+  .feedback-bg{
+
+  width:  90%;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+  background: linear-gradient(to bottom, rgba(1,1,1,0.6) 0%,rgba(1,1,1,0.6) 100%) !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover!important;
+  z-index:-1;
+  border:1px solid gray;
+  border-radius: 15px;
+  color: white;
+  min-height: 100vh ;
+
+
+}
+
+}
+
+@media (max-width:633px){
+
+.w3-button{
+  width: 80%!important ;
+  margin-bottom: 10px;
+ 
+}
+.w3-circle{
+   border-radius: 10px!important;
+}
+}
+
+@media (min-width:769px) and (max-width: 992px) {
+
+  .feedback-bg{
+
+  width:  80%;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+  background: linear-gradient(to bottom, rgba(1,1,1,0.6) 0%,rgba(1,1,1,0.6) 100%) !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover!important;
+  z-index:-1;
+  border:1px solid gray;
+  border-radius: 15px;
+  color: white;
+  min-height: 100vh ;
+}
+
+
+}
+
